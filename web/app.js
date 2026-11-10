@@ -103,21 +103,40 @@ async function calculateNatalCrucible(e) {
   `;
 
   const payload = { date, time, city };
+  const PRIMARY_API = 'https://natal-api-mu.vercel.app';
+  const FALLBACK_API = 'https://easy-chart-api.vercel.app';
 
   try {
-    // Parallel fetch: SVG Wheel + Astrological Dossier
-    const [svgRes, dossierRes] = await Promise.all([
-      fetch('https://easy-chart-api.vercel.app/v1/chart.svg', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      }),
-      fetch('https://easy-chart-api.vercel.app/v1/chart/dossier', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      })
-    ]);
+    let svgRes, dossierRes;
+    try {
+      [svgRes, dossierRes] = await Promise.all([
+        fetch(`${PRIMARY_API}/v1/chart.svg`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        }),
+        fetch(`${PRIMARY_API}/v1/chart/dossier`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        })
+      ]);
+      if (!svgRes.ok || !dossierRes.ok) throw new Error('Primary API returned non-200');
+    } catch (primaryErr) {
+      console.warn('Primary natal-api unavailable, trying fallback:', primaryErr);
+      [svgRes, dossierRes] = await Promise.all([
+        fetch(`${FALLBACK_API}/v1/chart.svg`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        }),
+        fetch(`${FALLBACK_API}/v1/chart/dossier`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        })
+      ]);
+    }
 
     if (!svgRes.ok || !dossierRes.ok) {
       throw new Error('API returned an error state');
