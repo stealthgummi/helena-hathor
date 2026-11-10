@@ -92,3 +92,4 @@ thumb = img.resize((350, int(350 * H / W)), Image.Resampling.LANCZOS)
 thumb.save(thumb_path, "PNG")
 
 print("Generated Gothic Occult cover for The Natal Crucible successfully!")
+

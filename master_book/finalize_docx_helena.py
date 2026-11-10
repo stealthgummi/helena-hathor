@@ -54,3 +54,4 @@ with zipfile.ZipFile(docx_path, 'r') as zin:
 os.remove(docx_path)
 os.rename(temp_zip, docx_path)
 print("Updated docx with Gothic cover image successfully.")
+
