@@ -27,3 +27,4 @@ for a in set(anchors):
 
 if all_ok:
     print('\nALL ANCHORS AND IDS ARE 100% MATCHED!')
+

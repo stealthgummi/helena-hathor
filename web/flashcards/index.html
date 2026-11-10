@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/flashcards/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>The Natal Crucible — Shadow Activation Decks</title>
+  <meta name="theme-color" content="#07080b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="/flashcards/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/flashcards/style.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-wrapper">
+        <span class="brand-glyph">☿</span>
+        <div class="brand-text">
+          <h1>The Natal Crucible</h1>
+          <p>Helena Hathor · Shadow Activation Decks</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SCREEN 1: DECK SELECTION & NOTEBOOKLM IMPORTER -->
+  <main id="screen-home" class="screen active">
+    <div class="hero-box">
+      <span class="hero-pill">Cosmic Blueprint Study Suite</span>
+      <h2>Interactive Mastery Decks</h2>
+      <p>Master your chart archetypes, planetary drives, and 12 life arenas through spaced-repetition flashcards and morning/evening elemental reflection prompts.</p>
+    </div>
+
+    <!-- Deck Grid -->
+    <div class="deck-grid" id="deck-grid">
+      <!-- Injected by app.js -->
+    </div>
+
+    <!-- NotebookLM Drag & Drop Importer -->
+    <div class="importer-card" id="importer-dropzone">
+      <div class="importer-icon">📥</div>
+      <h3>Import NotebookLM Flashcards</h3>
+      <p>Export your study deck from Google NotebookLM or Anki as a CSV file, then drag and drop it here to study inside The Natal Mind reader.</p>
+      <button class="btn-header" style="margin: 0 auto;">Select CSV File</button>
+      <input type="file" id="csv-file-input" accept=".csv" style="display: none;">
+    </div>
+  </main>
+
+  <!-- SCREEN 2: ACTIVE STUDY STAGE -->
+  <section id="screen-study" class="screen">
+    <div class="study-top-bar">
+      <button id="btn-back-home" class="btn-back">
+        <span>←</span> Back to Decks
+      </button>
+      <div class="study-deck-info">
+        <h3 id="study-title" class="study-deck-title">Deck Title</h3>
+      </div>
+      <div class="study-progress-meter">
+        <div class="progress-track">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <span id="progress-label" class="progress-label">0 of 0</span>
+      </div>
+    </div>
+
+    <!-- 3D Card Stage -->
+    <div class="study-stage">
+      <div class="card-wrapper" id="card-wrapper">
+        <!-- Front -->
+        <div class="card-face card-face-front">
+          <div class="card-header-badge">
+            <span class="side-indicator"><span>☉</span> Question / Prompt</span>
+            <span id="card-front-hint" class="card-hint-badge">Astrological Theme</span>
+          </div>
+          <div class="card-content-area">
+            <p id="card-front-text" class="card-text">Loading...</p>
+          </div>
+          <div class="card-instructions">
+            <span>Click card or press <kbd>Space</kbd> to reveal answer</span>
+          </div>
+        </div>
+
+        <!-- Back -->
+        <div class="card-face card-face-back">
+          <div class="card-header-badge">
+            <span class="side-indicator"><span>✦</span> Insight & Synthesis</span>
+            <span id="card-back-hint" class="card-hint-badge">Deep Blueprint</span>
+          </div>
+          <div class="card-content-area">
+            <p id="card-back-text" class="card-text">Loading answer...</p>
+          </div>
+          <div class="card-instructions">
+            <span>Rate your recall below to queue review</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="study-controls">
+      <button id="btn-again-action" class="btn-study-action btn-again" title="Shortcut: 1 or Left Arrow">
+        <span>↺</span> Review Again <kbd style="margin-left: 4px; opacity: 0.6; font-size: 0.75rem;">(1)</kbd>
+      </button>
+      <button id="btn-flip-action" class="btn-study-action btn-flip" title="Shortcut: Spacebar">
+        <span>⟲</span> Flip Card <kbd style="margin-left: 4px; opacity: 0.6; font-size: 0.75rem;">(Space)</kbd>
+      </button>
+      <button id="btn-know-action" class="btn-study-action btn-known" title="Shortcut: 2 or Right Arrow">
+        <span>✓</span> Know It <kbd style="margin-left: 4px; opacity: 0.6; font-size: 0.75rem;">(2)</kbd>
+      </button>
+    </div>
+
+    <div class="shortcuts-footer">
+      <span>Pro tip: Use <kbd>Space</kbd> to flip • <kbd>1</kbd> or <kbd>←</kbd> to review • <kbd>2</kbd> or <kbd>→</kbd> if mastered</span>
+    </div>
+  </section>
+
+  <!-- SCREEN 3: COMPLETION SUMMARY -->
+  <section id="screen-complete" class="screen">
+    <div class="complete-box">
+      <span class="complete-glyph">🌟</span>
+      <h2>Round Complete!</h2>
+      <p>You've cycled through all active cards in this deck. The cosmic archetypes are integrating into your intuition.</p>
+
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <div id="stat-mastered" class="stat-val good">0</div>
+          <div class="stat-label">Mastered Cards</div>
+        </div>
+        <div class="stat-cell">
+          <div id="stat-review" class="stat-val">0</div>
+          <div class="stat-label">Reviewed Items</div>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 14px; justify-content: center;">
+        <button id="btn-study-again" class="btn-study-deck" style="padding: 10px 24px;">Restart Deck</button>
+        <button id="btn-back-decks" class="btn-header" style="padding: 10px 24px;">Explore Other Decks</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="/flashcards/decks.js"></script>
+  <script src="/flashcards/app.js"></script>
+</body>
+</html>
+
