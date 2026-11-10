@@ -111,3 +111,4 @@ for t in doc.tables:
 output_docx = r"C:\Users\jewel\Desktop\helena\master_book\The_Natal_Crucible_Master_Book_Complete.docx"
 doc.save(output_docx)
 print(f"Successfully saved updated Helena Master Book: {output_docx}")
+
