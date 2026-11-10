@@ -1,0 +1,19 @@
+# Dependencies & OS
+node_modules/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# Heavy video dumps & raw scraping archives
+instagram/
+youtube/
+*.mp4
+!web/public/videos/featured.mp4
+
+# Environment & build artifacts
+.env
+.env.local
+dist/
+.vercel
+
