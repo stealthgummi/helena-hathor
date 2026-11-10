@@ -45,3 +45,4 @@ print("Successfully hot-swapped all plates in DOCX with Julia's custom infograph
 
 if os.path.exists(temp_thumb_jpg):
     os.remove(temp_thumb_jpg)
+
