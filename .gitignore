@@ -5,15 +5,18 @@ Thumbs.db
 __pycache__/
 *.pyc
 
-# Heavy video dumps & raw scraping archives
+# Heavy video dumps, raw scraping archives & internal research files
 instagram/
 youtube/
+master_book/
 *.mp4
-!web/public/videos/featured.mp4
+*Psychological Profile*
+psych_eval*
+check_pdf_content.py
+validate_anchors.py
 
 # Environment & build artifacts
 .env
 .env.local
 dist/
 .vercel
-
