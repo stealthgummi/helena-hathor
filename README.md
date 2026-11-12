@@ -17,3 +17,4 @@ Full-stack **6-Tab Astrology PWA & NASA JPL Ephemeris API Suite** built for **He
    - Interactive SVG ring & 7 daily accountability habits.
 6. **`📓 Grimoire` (Shadow Alchemy Journal & 1080×1350 Story Card Studio)**
    - Private local journal + high-resolution Gothic Velvet & Gold PNG exporter.
+

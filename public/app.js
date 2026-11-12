@@ -722,3 +722,4 @@ function exportStoryCardPng(quoteText) {
   link.href = canvas.toDataURL('image/png');
   link.click();
 }
+

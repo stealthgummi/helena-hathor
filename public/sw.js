@@ -1,4 +1,4 @@
-const CACHE_NAME = 'helena-crucible-v2';
+const CACHE_NAME = 'helena-crucible-v3';
 const ASSETS = [
   '/',
   '/index.html',
@@ -6,8 +6,7 @@ const ASSETS = [
   '/app.js',
   '/manifest.json',
   '/images/helena_portrait.png',
-  '/images/helena_microscope.jpg',
-  '/images/crucible_cover.png'
+  '/images/helena_microscope.jpg'
 ];
 
 self.addEventListener('install', (e) => {
