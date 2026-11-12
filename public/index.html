@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Helena Hathor ✦ The Natal Crucible · @helenahathorastrology444</title>
+  <meta name="description" content="Put your birth chart under the microscope with Helena Hathor (@helenahathorastrology444). North Node soul purpose, South Node karmic purge, 2H/8H wealth alchemy, 444 portals & Bali Sanctuary sound healing." />
+  <meta name="theme-color" content="#0D0716" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="/icons/icon-192.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="ambient-orb orb-gold"></div>
+  <div class="ambient-orb orb-crimson"></div>
+  <div class="ambient-orb orb-violet"></div>
+
+  <div class="app-shell">
+    <!-- Top Header -->
+    <header class="top-header glass-card">
+      <div class="brand-row">
+        <div class="avatar-ring">
+          <img src="/images/helena_portrait.png" alt="Helena Hathor" class="avatar-img" />
+          <span class="live-dot" title="444 Clairvoyant Channel Active"></span>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title-row">
+            <h1>The Natal Crucible ✦</h1>
+            <span class="pill-badge">444 PORTAL</span>
+          </div>
+          <p class="brand-sub">@helenahathorastrology444 · Under The Microscope</p>
+        </div>
+      </div>
+      <button id="open-birth-modal-btn" class="btn-chip" title="Edit Exact Birth Data">
+        <span>🔬</span> <span id="active-user-pill">Set Birth Time</span>
+      </button>
+    </header>
+
+    <!-- Main Content Viewport -->
+    <main class="tab-viewport">
+      <!-- ==================== TAB 1: TODAY (RADAR & HOROSCOPES) ==================== -->
+      <section id="tab-today" class="tab-pane active">
+        <!-- Hero Banner -->
+        <div class="hero-crucible-card glass-card">
+          <div class="hero-media-col">
+            <img src="/images/helena_microscope.jpg" alt="Helena Hathor Under The Microscope" class="hero-portrait-img" />
+          </div>
+          <div class="hero-copy-col">
+            <span class="eyebrow-tag">🔬 PSYCHIC DIAGNOSTIC & KARMIC ALCHEMY</span>
+            <h2>“The North Node in astrology really does tell you what the f*** you’re supposed to be doing on Earth.”</h2>
+            <p class="hero-subcopy">
+              Stop reading generic fluff. We put your exact degrees, your <strong>North &amp; South Node karma</strong>, your <strong>2nd/8th house wealth rulers</strong>, and the <strong>16° Fixed-sign pressure valve</strong> straight under the microscope so you can unplug the karma and turn pain into unstoppable power.
+            </p>
+            <div class="hero-cta-row">
+              <button class="btn-primary btn-sm" data-goto-tab="chart">🔬 Inspect My Natal Chart</button>
+              <a href="/downloads/The_Natal_Crucible_Master_Book_Complete.pdf" target="_blank" class="btn-outline btn-sm">📖 65-Page Master Book (PDF)</a>
+              <a href="/flashcards/index.html" class="btn-outline btn-sm">🃏 Study Flashcards</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sky Weather Banner -->
+        <div class="glass-card section-card">
+          <div class="section-header-row">
+            <div>
+              <span class="eyebrow-tag">⚡ LIVE EPHEMERIS DIAGNOSTIC</span>
+              <h3 id="sky-headline">Loading Today’s Planetary Crucible...</h3>
+            </div>
+            <span id="sky-moon-phase" class="status-pill">🌙 Calculating...</span>
+          </div>
+          <p id="helena-daily-brief" class="helena-quote-box"></p>
+          <div id="sky-pills-row" class="chips-wrap"></div>
+        </div>
+
+        <!-- Personal Transit Radar + Scrubber -->
+        <div class="glass-card section-card">
+          <div class="section-header-row">
+            <div>
+              <span class="eyebrow-tag">🧭 PERSONAL TRANSIT RADAR</span>
+              <h3>Your Chart Under Today’s Sky</h3>
+            </div>
+            <div class="scrubber-controls">
+              <button id="transit-prev-btn" class="btn-icon" title="Previous Day">◀</button>
+              <input type="date" id="transit-date-input" class="date-input-pill" />
+              <button id="transit-today-btn" class="btn-chip-xs">Today</button>
+              <button id="transit-next-btn" class="btn-icon" title="Next Day">▶</button>
+            </div>
+          </div>
+          <p class="muted-note">Real-time NASA JPL ephemeris aspects hitting your natal planets, North/South Nodes, and 16° Fixed-sign pressure valves.</p>
+          <div id="personal-transits-list" class="stack-list"></div>
+        </div>
+
+        <!-- Midnight 12-Sign Horoscopes -->
+        <div class="glass-card section-card">
+          <div class="section-header-row">
+            <div>
+              <span class="eyebrow-tag">🕛 MIDNIGHT 12-SIGN TRANSMISSIONS</span>
+              <h3>Daily “Under The Microscope” Readings</h3>
+            </div>
+            <span id="horoscope-date-badge" class="status-pill">Live Ephemeris</span>
+          </div>
+          <p class="muted-note">Read for your <strong>Rising Sign first</strong> (for exact house accuracy), then your Sun &amp; Moon.</p>
+
+          <div id="sign-selector-grid" class="sign-pills-grid"></div>
+
+          <div class="lens-tabs-row">
+            <button class="lens-tab active" data-lens="rising_sun_reading">🔬 Under The Microscope</button>
+            <button class="lens-tab" data-lens="venus_money_love">💰 2H/8H Money &amp; Karma</button>
+            <button class="lens-tab" data-lens="moon_nervous_system">🌺 Bali Sanctuary Reset</button>
+          </div>
+
+          <div id="active-horoscope-card" class="horoscope-display-card"></div>
+        </div>
+
+        <!-- Today's Birthday Solar Return -->
+        <div id="birthday-card-box" class="glass-card section-card birthday-spotlight"></div>
+      </section>
+
+      <!-- ==================== TAB 2: MICROSCOPE (NATAL CHART) ==================== -->
+      <section id="tab-chart" class="tab-pane">
+        <div class="glass-card section-card">
+          <div class="section-header-row">
+            <div>
+              <span class="eyebrow-tag">🔬 360° WHOLE-SIGN EPHEMERIS WHEEL</span>
+              <h3 id="chart-title-heading">Your Birth Chart Under The Microscope</h3>
+              <p id="chart-meta-sub" class="muted-note"></p>
+            </div>
+            <div class="row-actions">
+              <button id="edit-chart-btn-2" class="btn-chip-xs">✏️ Birth Time</button>
+              <button id="download-wheel-btn" class="btn-chip-xs">⬇ Save Wheel SVG</button>
+            </div>
+          </div>
+
+          <div id="natal-wheel-wrap" class="wheel-container"></div>
+
+          <!-- 5 Microscope Sub-Tabs -->
+          <div class="subtab-bar">
+            <button class="subtab-btn active" data-subtab="sub-big3">🧭 Nodes &amp; Big 3</button>
+            <button class="subtab-btn" data-subtab="sub-wealth">💰 2H/8H Wealth</button>
+            <button class="subtab-btn" data-subtab="sub-asteroids">☄️ 8 Asteroids</button>
+            <button class="subtab-btn" data-subtab="sub-shield">🔥 Truth &amp; Karma</button>
+            <button class="subtab-btn" data-subtab="sub-bali">🌺 Past Lives &amp; Bali</button>
+          </div>
+
+          <div id="sub-big3" class="subtab-pane active"></div>
+          <div id="sub-wealth" class="subtab-pane"></div>
+          <div id="sub-asteroids" class="subtab-pane"></div>
+          <div id="sub-shield" class="subtab-pane"></div>
+          <div id="sub-bali" class="subtab-pane"></div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 3: PORTALS (444 & NUMEROLOGY) ==================== -->
+      <section id="tab-numbers" class="tab-pane">
+        <div class="glass-card section-card">
+          <span class="eyebrow-tag">⚡ @HELENAHATHORASTROLOGY444 · CLAIRVOYANT NUMEROLOGY</span>
+          <h3>444 &amp; 11:11 Potent Portal Decoder</h3>
+          <p class="muted-note">
+            “This day is going to afford you a once-in-a-lifetime opportunity… a potent portal.” Tap the repeating frequency stalking your clock or receipts to decode the planetary &amp; house message.
+          </p>
+
+          <div id="angel-buttons-grid" class="angel-grid"></div>
+          <div id="angel-result-box" class="portal-decode-card"></div>
+        </div>
+
+        <div class="glass-card section-card">
+          <span class="eyebrow-tag">⏳ MACRO-CYCLE &amp; PERSONAL TIMING</span>
+          <h3>Your Life Path &amp; 2026–2027 Portal Numbers</h3>
+          <div id="numerology-grid-box" class="num-stats-grid"></div>
+          <div id="numerology-details-box" class="stack-list"></div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 4: SANCTUARY (BALI SOUND BATH & BOOK VAULT) ==================== -->
+      <section id="tab-sanctuary" class="tab-pane">
+        <div class="glass-card section-card">
+          <span class="eyebrow-tag">🌺 BALI SANCTUARY &amp; SOMATIC NERVOUS-SYSTEM SPOILING</span>
+          <h3>Sound Healing Bath &amp; Karmic Cord Release</h3>
+          <p class="muted-note">
+            Inspired by Helena’s <strong>April 2027 Bali Astrology Retreat</strong> — luxury private sanctuary, flower baths, and vibrational sound healing after intense Plutonian shadow work. <em>“Girl, we’re going to spoil you.”</em>
+          </p>
+
+          <div class="sound-bath-box">
+            <div id="breathing-orb" class="crucible-breath-orb">
+              <span id="breath-instruction">Tap a Frequency to Begin</span>
+            </div>
+            <div class="freq-buttons-row">
+              <button class="freq-btn" data-freq="432">🌺 432 Hz Bali Flower Bath</button>
+              <button class="freq-btn" data-freq="528">🔥 528 Hz Pain-to-Power Alchemy</button>
+              <button class="freq-btn" data-freq="396">🔌 396 Hz Unplug South Node Karma</button>
+              <button id="stop-audio-btn" class="freq-btn freq-stop">⏹ Stop Sound</button>
+            </div>
+          </div>
+
+          <div class="protocol-grid">
+            <div class="protocol-card">
+              <h4>🌺 1. The Bali Flower Bath &amp; Psychic Hygiene</h4>
+              <p>When "all the claires" are overloaded from absorbing collective static, immerse in warm salt &amp; flower water. Command every energy that does not belong to your soul contract to wash down the drain.</p>
+            </div>
+            <div class="protocol-card">
+              <h4>🔌 2. Unplugging South Node Karma</h4>
+              <p>Place your left hand over your heart and right hand on your solar plexus. Name the exact person, debt, or pattern draining your power and state out loud: <em>"This multi-lifetime contract is closed. I unplug my energy now."</em></p>
+            </div>
+            <div class="protocol-card">
+              <h4>🛡️ 3. The Worst-Day Mars/South Node Protocol</h4>
+              <p>When Mars conjuncts the South Node or triggers 16° Fixed pressure, do not get baited into messy fights. Go silent, lock your boundaries, and let their secrets expose themselves.</p>
+            </div>
+            <div class="protocol-card">
+              <h4>🔥 4. Alchemizing Pain Into F***ing Power</h4>
+              <p>Every betrayal is raw Plutonian fuel. Ask yourself Helena’s signature question: <em>"What do I need to release right now so I can be f***ing powerful, because people aren't ready for me?"</em></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Master Book + Flashcards Vault -->
+        <div class="glass-card section-card book-vault-card">
+          <div class="book-vault-flex">
+            <img src="/images/crucible_cover.png" alt="The Natal Crucible Book Cover" class="vault-book-cover" />
+            <div class="vault-copy">
+              <span class="eyebrow-tag">📚 COMPLETE STUDY &amp; COACHING VAULT</span>
+              <h3>The Natal Crucible: Putting Your Soul’s Blueprint Under The Microscope</h3>
+              <p class="muted-note">
+                Includes the complete 65-page illustrated textbook PDF + 4 interactive flashcard decks covering Planetary Mechanics, Signs, Houses, Aspects, and Karmic Nodes.
+              </p>
+              <div class="hero-cta-row">
+                <a href="/downloads/The_Natal_Crucible_Master_Book_Complete.pdf" target="_blank" class="btn-primary btn-sm">📥 Download 65-Page Master PDF</a>
+                <a href="/flashcards/index.html" class="btn-outline btn-sm">🃏 Launch Interactive Flashcards</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 5: CRUCIBLE (ACCOUNTABILITY METER) ==================== -->
+      <section id="tab-softlife" class="tab-pane">
+        <div class="glass-card section-card">
+          <span class="eyebrow-tag">🔥 “CLEAN UP YOUR SHIT” · DAILY SOVEREIGNTY AUDIT</span>
+          <h3>The Crucible Power Meter</h3>
+          <p class="muted-note">
+            You cannot claim North Node power while living in South Node mess. Check off your daily non-negotiable sovereignty rituals to charge your Crucible ring to 100%.
+          </p>
+
+          <div class="meter-flex-wrap">
+            <div class="meter-ring-box">
+              <svg viewBox="0 0 140 140" class="meter-svg">
+                <circle cx="70" cy="70" r="58" class="meter-bg-circle" />
+                <circle id="softlife-progress-circle" cx="70" cy="70" r="58" class="meter-fg-circle" stroke-dasharray="364.4" stroke-dashoffset="364.4" />
+              </svg>
+              <div class="meter-center-label">
+                <span id="softlife-pct-text">0%</span>
+                <small>SOVEREIGN</small>
+              </div>
+            </div>
+            <div class="meter-status-copy">
+              <h4 id="softlife-status-title">Unplugging The Mess...</h4>
+              <p id="softlife-status-desc" class="muted-note">Check off your daily Helena protocols below to lock in your frequency.</p>
+              <button id="reset-softlife-btn" class="btn-chip-xs">↻ Reset Today’s Audit</button>
+            </div>
+          </div>
+
+          <div id="softlife-checklist" class="checklist-stack"></div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 6: GRIMOIRE (SHADOW JOURNAL & IG CARD STUDIO) ==================== -->
+      <section id="tab-diary" class="tab-pane">
+        <div class="glass-card section-card">
+          <span class="eyebrow-tag">📓 SHADOW ALCHEMY GRIMOIRE &amp; RECEIPTS</span>
+          <h3>Private Diagnostic Notes &amp; Story Card Studio</h3>
+          <p class="muted-note">
+            Write down your psychic downloads, past-life realizations, or what you are releasing today — then export a 1080×1350 Gothic Velvet &amp; Gold card for your Story or private vault.
+          </p>
+
+          <div class="prompt-chips-row">
+            <button class="prompt-chip" data-prompt="My North Node mission requires me to stop apologizing for ">🧭 North Node Claim</button>
+            <button class="prompt-chip" data-prompt="Today I am unplugging the South Node karma of ">🔌 Unplug South Node</button>
+            <button class="prompt-chip" data-prompt="Speaking truth to power: the boundary I am locking down in my 2nd/8th house is ">🔥 Truth To Power</button>
+            <button class="prompt-chip" data-prompt="444 Clairvoyant Download — my intuition just exposed ">⚡ 444 Download</button>
+          </div>
+
+          <textarea id="diary-textarea" class="grimoire-textarea" rows="4" placeholder="Write your ruthless diagnostic truth or karmic release here..."></textarea>
+
+          <div class="diary-actions-row">
+            <button id="save-diary-btn" class="btn-primary btn-sm">💾 Save To Private Grimoire</button>
+            <button id="export-ig-card-btn" class="btn-outline btn-sm">📸 Export 1080×1350 Story Card PNG</button>
+          </div>
+
+          <div id="diary-entries-list" class="stack-list" style="margin-top: 18px;"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom 6-Tab Navigation -->
+    <nav class="bottom-nav glass-card">
+      <button class="nav-tab active" data-tab="today">
+        <span class="nav-icon">⚡</span>
+        <span class="nav-label">Today</span>
+      </button>
+      <button class="nav-tab" data-tab="chart">
+        <span class="nav-icon">🔬</span>
+        <span class="nav-label">Microscope</span>
+      </button>
+      <button class="nav-tab" data-tab="numbers">
+        <span class="nav-icon">444</span>
+        <span class="nav-label">Portals</span>
+      </button>
+      <button class="nav-tab" data-tab="sanctuary">
+        <span class="nav-icon">🌺</span>
+        <span class="nav-label">Sanctuary</span>
+      </button>
+      <button class="nav-tab" data-tab="softlife">
+        <span class="nav-icon">🔥</span>
+        <span class="nav-label">Crucible</span>
+      </button>
+      <button class="nav-tab" data-tab="diary">
+        <span class="nav-icon">📓</span>
+        <span class="nav-label">Grimoire</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Birth Data Modal -->
+  <div id="birth-modal" class="modal-backdrop hidden">
+    <div class="modal-card glass-card">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow-tag">🔬 EXACT NATAL COORDINATES</span>
+          <h3>Put Your Chart Under The Microscope</h3>
+        </div>
+        <button id="close-birth-modal-btn" class="btn-icon">✕</button>
+      </div>
+      <p class="muted-note" style="margin-bottom: 14px;">
+        <em>“Don’t make me get violent — get your exact birth time!”</em> Your exact birth minute sets your Rising Sign, your 2nd/8th house money rulers, and where the North Node hits your chart.
+      </p>
+      <form id="birth-form" class="form-stack">
+        <label class="form-label">
+          <span>Your Name or Alias</span>
+          <input type="text" id="input-name" class="form-input" placeholder="e.g. Sovereign Soul" required />
+        </label>
+        <div class="form-row-2">
+          <label class="form-label">
+            <span>Birth Date</span>
+            <input type="date" id="input-date" class="form-input" required />
+          </label>
+          <label class="form-label">
+            <span>Exact Birth Time</span>
+            <input type="time" id="input-time" class="form-input" required />
+          </label>
+        </div>
+        <label class="form-label">
+          <span>Birth City (Worldwide Geocoder)</span>
+          <input type="text" id="input-city" class="form-input" placeholder="e.g. New York, Los Angeles, London, Bali, Toronto" required />
+        </label>
+        <div class="modal-footer-btns">
+          <button type="submit" class="btn-primary" style="width:100%;">🔬 Put My Chart Under The Microscope</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

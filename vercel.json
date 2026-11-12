@@ -1,12 +1,9 @@
 {
   "version": 2,
-  "trailingSlash": true,
-  "cleanUrls": true,
-  "rewrites": [
+  "crons": [
     {
-      "source": "/(.*)",
-      "destination": "/web/$1"
+      "path": "/api/cron-midnight",
+      "schedule": "0 5 * * *"
     }
   ]
 }
-

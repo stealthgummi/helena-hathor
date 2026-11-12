@@ -1,0 +1,13 @@
+{
+  "name": "helena-hathor-crucible-pwa",
+  "version": "2.0.0",
+  "description": "Helena Hathor (@helenahathorastrology444) — The Natal Crucible & Under The Microscope PWA + Ephemeris API Suite",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "midnight-drop": "node scripts/midnight_drop.js"
+  },
+  "dependencies": {
+    "astronomy-engine": "^2.1.19"
+  }
+}

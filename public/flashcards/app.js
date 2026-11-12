@@ -1,4 +1,4 @@
-// The Natal Mind — Interactive Flashcard Mastery Engine
+// The Natal Crucible — Interactive Flashcard Mastery Engine
 // Audio Synthesizer (Zero dependencies, pure Web Audio API)
 class SoundFX {
   constructor() {

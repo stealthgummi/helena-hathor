@@ -1,5 +1,5 @@
-// Preloaded Curated Flashcard Decks for The Natal Mind Bundle
-// Infused with Noelle's Empowered Voice & Grounded Wisdom (Calibrated at 78% Sweet Spot)
+// Preloaded Curated Flashcard Decks for The Natal Crucible Bundle
+// Infused with Helena's Empowered Voice & Grounded Wisdom (Calibrated at 78% Sweet Spot)
 const DEFAULT_DECKS = [
   {
     "id": "morning-ignition",
@@ -30,7 +30,7 @@ const DEFAULT_DECKS = [
       },
       {
         "q": "♈ Aries Morning Focus — Igniting the Pioneer",
-        "a": "Wake up and claim your courage! Where have you been waiting around for someone else to give you the green light?\n\nNoelle's Challenge: Pick that one thing you've been hesitating on and take the very first baby step before noon. You've got the fire—use it.",
+        "a": "Wake up and claim your courage! Where have you been waiting around for someone else to give you the green light?\n\nHelena's Challenge: Pick that one thing you've been hesitating on and take the very first baby step before noon. You've got the fire—use it.",
         "hint": "Aries Awakening"
       },
       {
@@ -483,66 +483,66 @@ const DEFAULT_DECKS = [
     "title": "🏛️📐 The Blueprint in Action: Houses, Aspects & Synastry",
     "icon": "🏛️",
     "tagline": "12 Life Arenas, Sacred Aspect Geometry, Vocational Blueprint & Love Synastry",
-    "description": "28 cards mapping the 12 Houses of Destiny with Noelle's Soul Questions, major aspects (conjunction to quincunx), T-Squares, Grand Trines, the Vocational Blueprint, and deep relational synastry.",
+    "description": "28 cards mapping the 12 Houses of Destiny with Helena's Soul Questions, major aspects (conjunction to quincunx), T-Squares, Grand Trines, the Vocational Blueprint, and deep relational synastry.",
     "cards": [
       {
         "q": "1st House — The Arena of Self & Vitality (Ascendant)",
-        "a": "• Life Arena: Physical body, appearance, outward demeanor, first impressions, vitality, personal identity.\n• Noelle's Soul Question: 'Who am I when I walk into a room, and how do I boldly show up as my authentic self?'",
+        "a": "• Life Arena: Physical body, appearance, outward demeanor, first impressions, vitality, personal identity.\n• Helena's Soul Question: 'Who am I when I walk into a room, and how do I boldly show up as my authentic self?'",
         "hint": "Identity & Outer Persona"
       },
       {
         "q": "2nd House — The Arena of Wealth & Self-Worth",
-        "a": "• Life Arena: Earned income, material possessions, financial security, tangible gifts, intrinsic self-worth.\n• Noelle's Soul Question: 'What do I allow myself to receive, own, and stand on? Does my net worth match my self-worth?'",
+        "a": "• Life Arena: Earned income, material possessions, financial security, tangible gifts, intrinsic self-worth.\n• Helena's Soul Question: 'What do I allow myself to receive, own, and stand on? Does my net worth match my self-worth?'",
         "hint": "Money, Values & Abundance Mindset"
       },
       {
         "q": "3rd House — The Arena of Voice & Mind",
-        "a": "• Life Arena: Daily communication, local community, siblings, short trips, early education, thought processing speed.\n• Noelle's Soul Question: 'How am I speaking my truth, connecting with my everyday circle, and honoring my voice?'",
+        "a": "• Life Arena: Daily communication, local community, siblings, short trips, early education, thought processing speed.\n• Helena's Soul Question: 'How am I speaking my truth, connecting with my everyday circle, and honoring my voice?'",
         "hint": "Communication & Daily Environment"
       },
       {
         "q": "4th House — The Arena of Sanctuary & Roots (Imum Coeli)",
-        "a": "• Life Arena: Home, ancestral lineage, childhood memories, emotional safety foundation, private personal world.\n• Noelle's Soul Question: 'Where do I plant my roots so my soul feels completely safe and nourished?'",
+        "a": "• Life Arena: Home, ancestral lineage, childhood memories, emotional safety foundation, private personal world.\n• Helena's Soul Question: 'Where do I plant my roots so my soul feels completely safe and nourished?'",
         "hint": "Home, Ancestry & Inner Security"
       },
       {
         "q": "5th House — The Arena of Joy, Romance & Creation",
-        "a": "• Life Arena: Creative expression, romance, butterflies, play, hobbies, children, joy, bold authentic spotlight.\n• Noelle's Soul Question: 'What brings my inner child alive with wild laughter, passion, and uninhibited creative magic?'",
+        "a": "• Life Arena: Creative expression, romance, butterflies, play, hobbies, children, joy, bold authentic spotlight.\n• Helena's Soul Question: 'What brings my inner child alive with wild laughter, passion, and uninhibited creative magic?'",
         "hint": "Romance, Play & Inner Child"
       },
       {
         "q": "6th House — The Arena of Wellness & Daily Craft",
-        "a": "• Life Arena: Daily routines, physical health, work environment, habits, daily service, nervous system maintenance.\n• Noelle's Soul Question: 'What daily sacred rituals and boundaries keep my physical vessel and mind running in harmony?'",
+        "a": "• Life Arena: Daily routines, physical health, work environment, habits, daily service, nervous system maintenance.\n• Helena's Soul Question: 'What daily sacred rituals and boundaries keep my physical vessel and mind running in harmony?'",
         "hint": "Daily Rituals, Health & Devoted Craft"
       },
       {
         "q": "7th House — The Arena of Sacred Partnerships (Descendant)",
-        "a": "• Life Arena: Committed relationships, marriage, business partnerships, one-on-one soul contracts, interpersonal mirroring.\n• Noelle's Soul Question: 'Who do I choose to walk beside, and what qualities are they reflecting back to me?'",
+        "a": "• Life Arena: Committed relationships, marriage, business partnerships, one-on-one soul contracts, interpersonal mirroring.\n• Helena's Soul Question: 'Who do I choose to walk beside, and what qualities are they reflecting back to me?'",
         "hint": "Committed Unions & Soul Mirrors"
       },
       {
         "q": "8th House — The Arena of Shadow Alchemy & Rebirth",
-        "a": "• Life Arena: Intimacy, shared finances, vulnerability, inheritances, occult wisdom, deep psychology, death & rebirth.\n• Noelle's Soul Question: 'What false mask am I ready to release so I can experience profound intimacy and sovereign power?'",
+        "a": "• Life Arena: Intimacy, shared finances, vulnerability, inheritances, occult wisdom, deep psychology, death & rebirth.\n• Helena's Soul Question: 'What false mask am I ready to release so I can experience profound intimacy and sovereign power?'",
         "hint": "Shared Wealth, Intimacy & Phoenix Rebirth"
       },
       {
         "q": "9th House — The Arena of Higher Wisdom & Horizon",
-        "a": "• Life Arena: Philosophy, higher learning, worldview, spiritual truth, long-distance pilgrimages, publishing.\n• Noelle's Soul Question: 'What higher truth and expansive horizon is calling me to expand beyond my current comfort zone?'",
+        "a": "• Life Arena: Philosophy, higher learning, worldview, spiritual truth, long-distance pilgrimages, publishing.\n• Helena's Soul Question: 'What higher truth and expansive horizon is calling me to expand beyond my current comfort zone?'",
         "hint": "Spiritual Pilgrimage & Broad Mindsets"
       },
       {
         "q": "10th House — The Arena of Legacy & Calling (Midheaven)",
-        "a": "• Life Arena: Professional reputation, public status, master career, leadership, authority, the legacy that outlives you.\n• Noelle's Soul Question: 'What mountain am I climbing, and what lasting impact will my work leave on this world?'",
+        "a": "• Life Arena: Professional reputation, public status, master career, leadership, authority, the legacy that outlives you.\n• Helena's Soul Question: 'What mountain am I climbing, and what lasting impact will my work leave on this world?'",
         "hint": "Career Summit & Public Legacy"
       },
       {
         "q": "11th House — The Arena of Soul Tribe & Future Visions",
-        "a": "• Life Arena: Friendships, collective networks, community movements, long-term dreams for humanity, aligned alliances.\n• Noelle's Soul Question: 'Who is my aligned soul tribe, and what kind of uplifting future are we co-creating together?'",
+        "a": "• Life Arena: Friendships, collective networks, community movements, long-term dreams for humanity, aligned alliances.\n• Helena's Soul Question: 'Who is my aligned soul tribe, and what kind of uplifting future are we co-creating together?'",
         "hint": "Community, Alliances & Collective Dreams"
       },
       {
         "q": "12th House — The Arena of the Mystic Void & Spirit",
-        "a": "• Life Arena: The subconscious mind, dreams, karma, spiritual retreat, intuition, unseen support, releasing self-sabotage.\n• Noelle's Soul Question: 'What do I need to release to the Universe so I can rest in the deep, peaceful embrace of the divine?'",
+        "a": "• Life Arena: The subconscious mind, dreams, karma, spiritual retreat, intuition, unseen support, releasing self-sabotage.\n• Helena's Soul Question: 'What do I need to release to the Universe so I can rest in the deep, peaceful embrace of the divine?'",
         "hint": "Solitude, Surrender & Subconscious Truth"
       },
       {
@@ -870,7 +870,7 @@ const DEFAULT_DECKS = [
         "hint": "The 4 Criteria of Magnetic Intentions"
       },
       {
-        "q": "The 12 Zodiac Strength Affirmations (Noelle's Magnetic Declarations)",
+        "q": "The 12 Zodiac Strength Affirmations (Helena's Magnetic Declarations)",
         "a": "♈ Aries: 'I am brave, sovereign, and take unapologetic bold action.'\n♉ Taurus: 'I am grounded in worth, and I easily receive divine abundance.'\n♊ Gemini: 'I am clear, adaptable, and my voice creates magnetic connection.'\n♋ Cancer: 'I am emotionally sovereign, safe, and worthy of deep love.'\n♌ Leo: 'I am radiant, creative, and unapologetically shine my light.'\n♍ Virgo: 'I am devoted, grounded, and honor my practical magic.'\n♎ Libra: 'I am balanced, authentic, and create harmonic, respectful love.'\n♏ Scorpio: 'I am powerful, resilient, and transform every wound into gold.'\n♐ Sagittarius: 'I am expansive, free, and trust the wild adventure of life.'\n♑ Capricorn: 'I am disciplined, resilient, and building a lasting legacy.'\n♒ Aquarius: 'I am visionary, original, and true to my unique soul mission.'\n♓ Pisces: 'I am deeply connected to the divine, intuitive, and guided.'",
         "hint": "12 Magnetic Sign Affirmations"
       },
