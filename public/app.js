@@ -55,7 +55,21 @@ function saveProfile(p) {
 function updateHeaderPill() {
   const pill = document.getElementById('active-user-pill');
   if (pill) {
-    pill.textContent = `${state.profile.name} · ${state.profile.city}`;
+    pill.textContent = `Active: ${state.profile.name} · ${state.profile.date} · ${state.profile.city}`;
+  }
+  const map = [
+    ['inline-name', state.profile.name],
+    ['inline-date', state.profile.date],
+    ['inline-time', state.profile.time],
+    ['inline-city', state.profile.city],
+    ['input-name', state.profile.name],
+    ['input-date', state.profile.date],
+    ['input-time', state.profile.time],
+    ['input-city', state.profile.city]
+  ];
+  for (const [id, val] of map) {
+    const el = document.getElementById(id);
+    if (el) el.value = val;
   }
 }
 
@@ -139,6 +153,22 @@ function initModal() {
     };
     saveProfile(updated);
     modal.classList.add('hidden');
+    await Promise.all([
+      fetchAndRenderNatal(),
+      fetchAndRenderTransits(state.transitDate),
+      fetchAndRenderNumbers(state.selectedAngel)
+    ]);
+  });
+
+  document.getElementById('inline-birth-form')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const updated = {
+      name: document.getElementById('inline-name').value.trim() || 'Sovereign Soul',
+      date: document.getElementById('inline-date').value,
+      time: document.getElementById('inline-time').value,
+      city: document.getElementById('inline-city').value.trim() || 'New York'
+    };
+    saveProfile(updated);
     await Promise.all([
       fetchAndRenderNatal(),
       fetchAndRenderTransits(state.transitDate),

@@ -34,10 +34,41 @@
           <p class="brand-sub">@helenahathorastrology444 · Under The Microscope</p>
         </div>
       </div>
-      <button id="open-birth-modal-btn" class="btn-chip" title="Edit Exact Birth Data">
-        <span>🔬</span> <span id="active-user-pill">Set Birth Time</span>
+      <button id="open-birth-modal-btn" class="btn-enter-chart-prominent" title="Enter Your Exact Birth Data">
+        <span class="prominent-main">🔬 ENTER YOUR BIRTH CHART</span>
+        <span id="active-user-pill" class="prominent-sub">Tap to enter your birth info</span>
       </button>
     </header>
+
+    <!-- Prominent Always-Visible Quick Birth Input Bar -->
+    <section class="quick-birth-bar glass-card">
+      <div class="quick-birth-header">
+        <div>
+          <span class="eyebrow-tag">🔬 PUT YOUR CHART UNDER THE MICROSCOPE</span>
+          <h3>Enter Your Birth Date, Exact Time &amp; City Below</h3>
+        </div>
+        <span class="pill-badge">🌍 11M+ Cities Worldwide</span>
+      </div>
+      <form id="inline-birth-form" class="inline-birth-form-grid">
+        <label class="inline-field">
+          <span>Your Name</span>
+          <input type="text" id="inline-name" class="form-input" placeholder="Your Name" required />
+        </label>
+        <label class="inline-field">
+          <span>Birth Date</span>
+          <input type="date" id="inline-date" class="form-input" required />
+        </label>
+        <label class="inline-field">
+          <span>Exact Birth Time</span>
+          <input type="time" id="inline-time" class="form-input" required />
+        </label>
+        <label class="inline-field">
+          <span>Birth City (Worldwide)</span>
+          <input type="text" id="inline-city" class="form-input" placeholder="e.g. Los Angeles, London, Paris" required />
+        </label>
+        <button type="submit" class="btn-primary">🔬 Cast My Chart</button>
+      </form>
+    </section>
 
     <!-- Main Content Viewport -->
     <main class="tab-viewport">
