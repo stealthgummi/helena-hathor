@@ -1,4 +1,5 @@
 const { calculateNatalChart, calculateAspects, renderCrucibleWheel } = require('../lib/ephemeris.js');
+const { resolveCityAsync } = require('../lib/geo.js');
 const { buildHelenaNatalDossier } = require('../lib/helena_engine.js');
 
 module.exports = async (req, res) => {
@@ -23,6 +24,7 @@ module.exports = async (req, res) => {
       };
     }
 
+    await resolveCityAsync(payload.city || 'New York');
     const chart = calculateNatalChart(payload);
     const svg = renderCrucibleWheel(chart, 720);
     const aspects = calculateAspects(chart.planets);

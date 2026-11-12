@@ -1,4 +1,5 @@
 const { calculateNatalChart } = require('../lib/ephemeris.js');
+const { resolveCityAsync } = require('../lib/geo.js');
 const { evaluatePersonalTransits } = require('../lib/helena_engine.js');
 
 module.exports = async (req, res) => {
@@ -23,6 +24,7 @@ module.exports = async (req, res) => {
       };
     }
 
+    await resolveCityAsync(payload.city || 'New York');
     const natalChart = calculateNatalChart({
       date: payload.birth_date || payload.date,
       time: payload.birth_time || payload.time,
